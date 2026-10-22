@@ -1,16 +1,64 @@
-# React + Vite
+# 🌿 BreatheFlow — Pranayama Breathing Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> A modern, mindful web application designed to guide your pranayama and breathwork sessions with gentle audio cues, smooth animations, and customizable breathing rhythms.
 
-Currently, two official plugins are available:
+![BreatheFlow Screenshot](public/icons.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🧘 Preset Breathing Patterns**:
+  - **Box Breathing (Sama Vritti)**: 4s Inhale, 4s Hold, 4s Exhale, 4s Hold
+  - **4-7-8 Relaxing Breath**: 4s Inhale, 7s Hold, 8s Exhale
+  - **Equal Breathing**: 4s Inhale, 4s Exhale
+  - **Custom Pranayama**: Fully adjustable timings for Inhale, Inhale Hold, Exhale, and Exhale Hold
+- **🎨 Visual Breathing Circle**: Smooth expanding and contracting animation with phase indicators and countdown timers.
+- **🔊 Web Audio Chimes & Cues**:
+  - Gentle synthesizer chimes for phase transitions (Inhale, Hold, Exhale)
+  - 3-2-1 countdown preparation chime
+  - Subtle rhythmic second ticks (can be toggled on/off)
+  - Volume control and mute toggle
+- **⏱️ Flexible Controls**:
+  - Target by **Duration** (minutes) or **Cycle Count** (rounds)
+  - Pause, Resume, and Stop with confirmation dialog
+  - Session Summary report with total time, completed cycles, and calm quotes
+- **📱 Responsive & Accessible**:
+  - Clean, soothing emerald & sage green aesthetic
+  - Optimized for desktop, tablets, and smartphones
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🚀 Getting Started Locally
+
+### 1. Install Dependencies
+```bash
+npm install
+```
+
+### 2. Start Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### 3. Build for Production
+```bash
+npm run build
+```
+The optimized production bundle will be created in the `dist` folder.
+
+---
+
+## 🌐 Hosting on Netlify
+
+1. Build the app:
+   ```bash
+   npm run build
+   ```
+2. **Option A (Drag & Drop)**: Drop the `dist` folder directly onto [Netlify Drop](https://app.netlify.com/drop).
+3. **Option B (GitHub Continuous Deployment)**:
+   - Link this repository to Netlify.
+   - Build Command: `npm run build`
+   - Publish Directory: `dist`
+   *(Pre-configured via `netlify.toml`)*
